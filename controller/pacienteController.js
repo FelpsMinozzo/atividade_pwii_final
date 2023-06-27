@@ -54,7 +54,7 @@ router.put('/paciente/alterar', upload.array('imagens', 2), (req,res)=>{
 
     let picture_Patient = req.files[0].path;
 
-    livroModel.update(
+    patientModel.update(
         {
             name_Patient, 
             email_Patient, 
