@@ -49,7 +49,7 @@ router.get('/paciente/selecionar', (req,res)=>{
     );
 })
 
-router.put('/paciente/alterar', upload.array('imagens', 2), (req,res)=>{
+router.put('/paciente/alterar', upload.array('picture_Patient', 2), (req,res)=>{
     let {name_Patient, email_Patient, phone_Patient, cellphone_Patient, name_Relative, phone_Relative} = req.body;
 
     let picture_Patient = req.files[0].path;
