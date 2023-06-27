@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "18fadcb9-5ba3-4a6f-9b5c-7ab556d2cdf9",
+		"name": "rotasPaciente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26212269"
+	},
+	"item": [
+		{
+			"name": "categoria/inserir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name_Patient",
+							"value": "Eduardo Felipe",
+							"type": "text"
+						},
+						{
+							"key": "email_Patient",
+							"value": "edu.minozzo1995@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_Patient",
+							"value": "4198-5751",
+							"type": "text"
+						},
+						{
+							"key": "cellphone_Patient",
+							"value": "+55 11 96520-2733",
+							"type": "text"
+						},
+						{
+							"key": "picture_Patient",
+							"type": "file",
+							"src": "/C:/Users/eduardo_22449/Downloads/R.jpg"
+						},
+						{
+							"key": "name_Relative",
+							"value": "Nei",
+							"type": "text"
+						},
+						{
+							"key": "phone_Relative",
+							"value": "+55 11 98765-9021",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/paciente/inserir",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"paciente",
+						"inserir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categoria/selecionar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/paciente/selecionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"paciente",
+						"selecionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categoria/alterar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "name_Patient",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email_Patient",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone_Patient",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "cellphone_Patient",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "picture_Patient",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "name_Relative",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone_Relative",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/paciente/alterar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"paciente",
+						"alterar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categoria/deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/paciente/excluir/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"paciente",
+						"excluir",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
